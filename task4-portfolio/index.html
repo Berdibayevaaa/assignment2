@@ -2,187 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BookHaven — Interactive Library Dashboard</title>
+  <title>Task 4 - Combined Showcase</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="dashboard-grid">
-    
-    <!-- Header (Task 0: Flexbox Navbar) -->
-    <header class="dashboard-header">
-      <div class="brand">
-        <span class="brand-icon">📚</span>
-        <h1>BookHaven Hub</h1>
+  <div class="showcase-grid">
+    <div class="releases">
+      <h2>Special Releases</h2>
+      
+      <div class="item-card">
+        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=300&auto=format&fit=crop" alt="Pass">
+        <div>
+          <h3>Digital Reading Pass</h3>
+          <p>Instant synchronization across devices.</p>
+        </div>
       </div>
-      <nav class="header-nav">
-        <a href="#showcase">Genres</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#portfolio">Featured</a>
-        <button class="join-btn">Get Started</button>
-      </nav>
-    </header>
 
-    <!-- Sidebar (Part of Grid Layout) -->
-    <aside class="dashboard-sidebar">
-      <h3>Library Space</h3>
-      <ul class="sidebar-menu">
-        <li class="active">Discover</li>
-        <li>Bestsellers</li>
-        <li>Classic Series</li>
-        <li>Audiobooks</li>
-        <li>Bookmarks</li>
-        <li>Settings</li>
-      </ul>
-      <div class="sidebar-banner">
-        <p class="banner-title">Weekend Pick</p>
-        <p class="banner-text">Enjoy 25% off our curated fantasy selection!</p>
+      <div class="item-card">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&auto=format&fit=crop" alt="Guild">
+        <div>
+          <h3>Reader's Guild</h3>
+          <p>Monthly discussions and exclusive reviews.</p>
+        </div>
       </div>
-    </aside>
+    </div>
 
-    <!-- Main Content Area -->
-    <main class="dashboard-main">
-
-      <!-- Section 1: Card Row (Task 1: Flexbox Cards) -->
-      <section class="section-block" id="showcase">
-        <div class="section-title">
-          <h2>Popular Literary Genres</h2>
-          <span class="badge">Explore</span>
-        </div>
-        <div class="cards-row">
-          <article class="genre-card card-purple">
-            <div class="card-img-wrap">
-        <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=600" alt="Sci-Fi">
-            </div>
-            <div class="genre-info">
-              <h3>Science Fiction</h3>
-              <p>Futuristic discoveries, alternate galaxies, and philosophical journeys across the universe.</p>
-              <button class="card-btn">Browse Books</button>
-            </div>
-          </article>
-
-          <article class="genre-card card-coral">
-            <div class="card-img-wrap">
-              <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600" alt="Psychology">
-            </div>
-            <div class="genre-info">
-              <h3>Psychology & Growth</h3>
-              <p>Actionable wisdom, emotional resilience, mind habits, and profound self-reflection.</p>
-              <button class="card-btn">Browse Books</button>
-            </div>
-          </article>
-
-          <article class="genre-card card-mint">
-            <div class="card-img-wrap">
-              <img src="https://images.unsplash.com/photo-1463320726281-696a485928c7?w=600" alt="History">
-            </div>
-            <div class="genre-info">
-              <h3>Historical Fiction</h3>
-              <p>Dramatic chronicles, forgotten legends, timeless empires, and authentic world heritage.</p>
-              <button class="card-btn">Browse Books</button>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- Section 2: Image Gallery (Task 3: Grid 3x3 with Overlays) -->
-      <section class="section-block" id="gallery">
-        <div class="section-title">
-          <h2>Curated Cover Gallery</h2>
-          <span class="badge">9 Selections</span>
-        </div>
-        <div class="book-gallery">
-          <div class="gallery-cell">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ny955qdeAD3TglQx5p_ubdH8P74MjqDyj0Cktg3p_A&s=500" alt="Cover 1">
-            <div class="overlay"><span>Great Expectations</span></div>
-          </div>
-          <div class="gallery-cell">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ56rLoROneKrbvPcl9qJXiA-Uo3gdUv6y3MXQn2mASkw&s=500" alt="Cover 2">
-            <div class="overlay"><span>To Kill a Mockingbird</span></div>
-          </div>
-          <div class="gallery-cell">
-           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAzVooPYLn62hwuZhl3zSnCM-0npA3jL4tyzxOrQvKzA&s=500" alt="Cover 3">
-            <div class="overlay"><span>The Great Gatsby</span></div>
-          </div>
-          <div class="gallery-cell">
-           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzKrdFDdOXBdhR7ndMNTIrpI9dsm7E8Bza4At6-HMpbw&s=500" alt="Cover 4">
-            <div class="overlay"><span>Atomic Habits</span></div>
-          </div>
-          <div class="gallery-cell">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52G_FOZCCy2gBbXwzBEdyf1T-Q34edKOEyiPjemy2lA&s=500" alt="Cover 5">
-            <div class="overlay"><span>Sherlock Holmes</span></div>
-          </div>
-          <div class="gallery-cell">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmOB6shXqfaTRUIxcE50H3FkPM0QrC88RZsI_qxJA2OA&s=500" alt="Cover 6">
-            <div class="overlay"><span>The Hobbit</span></div>
-          </div>
-          <div class="gallery-cell">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzJFgxVPOq6DZu6KnncKkkx755wcSZKRZZkiU3AMlNYw&s=500" alt="Cover 7">
-            <div class="overlay"><span>1984 George Orwell</span></div>
-          </div>
-          <div class="gallery-cell">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqrGlwJvRGcuP4LHgZbvB2QjH97hPnYukWRsPg3-Ry8w&s=500" alt="Cover 8">
-            <div class="overlay"><span>The Little Prince</span></div>
-          </div>
-          <div class="gallery-cell">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnH3HqqoO8EGOOz1ZIw29Mg4IR45PZOy6o4tILQln8sg&s=500" alt="Cover 9">
-            <div class="overlay"><span>The Alchemist</span></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 3: Portfolio / Spotlight Area (Task 4: Combined Layout) -->
-      <section class="section-block" id="portfolio">
-        <div class="section-title">
-          <h2>Special Releases & Editorial Notes</h2>
-          <span class="badge">Featured</span>
-        </div>
-        <div class="spotlight-grid">
-          
-          <div class="spotlight-cards">
-            <article class="spotlight-card">
-              <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400" alt="Book 1">
-              <div class="spotlight-content">
-                <h4>Digital Reading Pass</h4>
-                <p>Instant synchronization of reading notes, bookmarks, and audio tracks across all devices.</p>
-                <button class="action-link">Read Details</button>
-              </div>
-            </article>
-
-            <article class="spotlight-card">
-<img src="https://images.unsplash.com/photo-1491841573634-28140fc7ced7?w=400" alt="Book 2">
-              <div class="spotlight-content">
-                <h4>Reader's Guild Community</h4>
-                <p>Monthly live roundtables, author interviews, and exclusive first-edition collector prints.</p>
-                <button class="action-link">Join Guild</button>
-              </div>
-            </article>
-          </div>
-
-          <aside class="editorial-card">
-            <h4>About Us</h4>
-            <p>Our goal is to build an inspiring digital sanctuary where readers of all backgrounds find thought-provoking stories.</p>
-            <div class="topic-pills">
-              <span>#Classics</span>
-              <span>#SciFi</span>
-              <span>#Mindset</span>
-              <span>#Culture</span>
-              <span>#Essays</span>
-            </div>
-          </aside>
-
-        </div>
-      </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="dashboard-footer">
-      <p>© 2026 BookHaven Dashboard. Crafted with modern Flexbox & CSS Grid.</p>
-    </footer>
-
+    <div class="about-card">
+      <h2>About Us</h2>
+      <p>Building an inspiring digital reading sanctuary for book lovers.</p>
+      <div class="tags">
+        <span>#Classics</span>
+        <span>#SciFi</span>
+        <span>#Mindset</span>
+      </div>
+    </div>
   </div>
-
 </body>
 </html>
