@@ -30,8 +30,7 @@ After that, I worked on the main page structure using CSS Grid Areas[cite: 1].
 * I split it into four clear areas: `header` on top, `sidebar` on the left, `main` for all the content, and `footer` at the bottom[cite: 1].
 * I used `240px 1fr` for columns so the sidebar has a fixed width while the main area takes up the remaining space[cite: 1].
 <img width="319" height="883" alt="image" src="https://github.com/user-attachments/assets/b34748d7-7302-4052-933d-624316086332" />
-<img width="959" height="779" alt="image" src="https://github.com/user-attachments/assets/86d0d2c1-9611-4bd1-815e-995722363e3e" />
-<img width="483" height="786" alt="image" src="https://github.com/user-attachments/assets/e18e4958-62b5-433f-802d-55812a7e4624" />
+
 
 ## Task 3: Book Cover Gallery
 For the gallery, I wanted to showcase 9 book covers in an even 3x3 layout[cite: 1].
