@@ -2,8 +2,6 @@ Assignment 2 — Web Development
 Student: Sayazhan Berdibayeva
 Grup: It-2501
 Live Demo: [https://berdibayevaaa.github.io/assignment2/](https://berdibayevaaa.github.io/assignment2/)
-<img width="1721" height="843" alt="image" src="https://github.com/user-attachments/assets/72087d2f-8768-4b20-a99f-a6dd2e548a48" />
-<img width="827" height="732" alt="image" src="https://github.com/user-attachments/assets/aba00a0a-62e9-4ba4-ab97-b20cccb009e7" />
 
 
 What this project is about
