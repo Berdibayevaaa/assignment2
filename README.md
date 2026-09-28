@@ -45,11 +45,6 @@ Finally, I combined both Grid and Flexbox in the bottom section[cite: 1].
 * Inside the release cards, I used Flexbox to align the thumbnails, headings, and details neatly[cite: 1].
 * I also used Flexbox with `flex-wrap: wrap` for the hashtag badges so they arrange themselves properly[cite: 1].
 <img width="1901" height="559" alt="image" src="https://github.com/user-attachments/assets/9917b3ae-7f77-4aef-864f-d5dfa0f8df19" />
-<img width="1259" height="776" alt="image" src="https://github.com/user-attachments/assets/8aaa266c-6503-43df-a799-85d75379936c" />
-<img width="937" height="754" alt="image" src="https://github.com/user-attachments/assets/47f2f8f1-0bc4-456a-9a6e-62636fde23f2" />
-<img width="1024" height="771" alt="image" src="https://github.com/user-attachments/assets/3afb11c0-df0a-48ea-9595-194f3779bde0" />
-<img width="894" height="919" alt="image" src="https://github.com/user-attachments/assets/13dd3ecf-9b99-4f44-a9a1-d8f843fa9960" />
-
 
 ## How to check the code
 1. Open the repository folders (`task0-navbar`, `task1-cards`, etc.) to view the code for each separate task[cite: 7].
