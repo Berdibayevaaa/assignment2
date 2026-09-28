@@ -38,8 +38,6 @@ For the gallery, I wanted to showcase 9 book covers in an even 3x3 layout[cite: 
 * To keep the cover pictures looking sharp and prevent them from stretching, I used `object-fit: cover`[cite: 1].
 * Then, I added a dark overlay with the book title over each image[cite: 1]. By default, its opacity is set to 0, but when hovering over the card, it smoothly fades in with `opacity: 1`[cite: 1].
 <img width="1327" height="1027" alt="image" src="https://github.com/user-attachments/assets/1d829c16-f516-430c-af44-fff7346fc4cd" />
-<img width="1004" height="946" alt="image" src="https://github.com/user-attachments/assets/99a0335f-8479-4604-85f8-fe3467190634" />
-<img width="311" height="710" alt="image" src="https://github.com/user-attachments/assets/15094508-5cfb-4d0c-b8b6-c79bd4798cbf" />
 
 ## Task 4: Featured Releases Section
 Finally, I combined both Grid and Flexbox in the bottom section[cite: 1].
