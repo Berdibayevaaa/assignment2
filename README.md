@@ -13,7 +13,7 @@ First, I created the top header for the website[cite: 1].
 * I used `display: flex` on the navbar and added `justify-content: space-between` so the logo sits on the left while the navigation links and button stay on the right[cite: 1].
 * I also set `align-items: center` to make sure all items are vertically aligned, and used `gap` so the links don't stick to each other[cite: 1].
 <img width="1892" height="122" alt="image" src="https://github.com/user-attachments/assets/b69c48a7-6b97-424e-8dfb-9a2666fc64bb" />
-<img width="955" height="710" alt="image" src="https://github.com/user-attachments/assets/c06d82cf-3659-461c-9db9-b60fe61bbef5" />
+
 
 ## Task 1: Genre Cards Row
 Next, I built a row of 3 book genre cards to test Flexbox behavior[cite: 1].
@@ -22,7 +22,7 @@ Next, I built a row of 3 book genre cards to test Flexbox behavior[cite: 1].
 * Inside the cards, I turned the content into a flex column (`flex-direction: column`) and set `flex-grow: 1` on the text[cite: 1]. This keeps all cards at the same height and pushes the buttons to the bottom evenly[cite: 1].
 * Lastly, I added a `:hover` state with `transform: translateY` and a shadow to make it feel interactive[cite: 1].
 <img width="1552" height="584" alt="image" src="https://github.com/user-attachments/assets/82eb0e5b-1eae-4332-8332-aaed0ef28fd9" />
-<img width="400" height="696" alt="image" src="https://github.com/user-attachments/assets/a7024be1-9364-4d2f-ace7-93fd12ae1d1c" />
+
 
 ## Task 2: Page Grid Layout
 After that, I worked on the main page structure using CSS Grid Areas[cite: 1].
