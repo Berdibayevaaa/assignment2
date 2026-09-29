@@ -3,140 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BookHaven — All Tasks Dashboard</title>
+  <title>BookHaven — Digital Reading Sanctuary</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="site-layout">
+    <header class="header">
+      <div class="logo">📚 BookHaven</div>
+      <nav class="nav-links">
+        <a href="#genres">Genres</a>
+        <a href="#gallery">Featured</a>
+        <a href="#projects">Releases</a>
+      </nav>
+      <button class="nav-btn">Get Started</button>
+    </header>
 
-  <!-- TASK 0: Navigation Bar -->
-  <header class="navbar">
-    <div class="logo">📚 BookHaven</div>
-    <nav class="nav-links">
-      <a href="#genres">Genres</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#releases">Releases</a>
-      <a href="#layout">Layout</a>
-    </nav>
-    <button class="nav-btn">Get Started</button>
-  </header>
+    <main class="main-content">
+      
+      <section id="genres" class="section">
+        <h2 class="section-heading">Popular Genres</h2>
+        <div class="genre-cards">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&auto=format&fit=crop" alt="Sci-Fi">
+            <div class="card-body">
+              <h3>Science Fiction</h3>
+              <p>Futuristic discoveries, alternate galaxies, and philosophical journeys across the universe.</p>
+              <button>Browse Books</button>
+            </div>
+          </div>
 
-  <div class="page-container">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600&auto=format&fit=crop" alt="Psychology">
+            <div class="card-body">
+              <h3>Psychology & Mind</h3>
+              <p>Actionable wisdom, emotional resilience, mind habits, and profound self-reflection.</p>
+              <button>Browse Books</button>
+            </div>
+          </div>
 
-    <!-- TASK 1: Genre Cards -->
-    <section id="genres" class="section-block">
-      <h2 class="section-title">Task 1: Book Genres (Flexbox)</h2>
-      <div class="cards-container">
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&auto=format&fit=crop" alt="Sci-Fi">
-          <div class="card-body">
-            <h3>Science Fiction</h3>
-            <p>Futuristic discoveries, alternate galaxies, and philosophical journeys across the universe.</p>
-            <button>Browse Books</button>
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600&auto=format&fit=crop" alt="History">
+            <div class="card-body">
+              <h3>Historical Fiction</h3>
+              <p>Dramatic chronicles, forgotten legends, timeless empires, and authentic world heritage.</p>
+              <button>Browse Books</button>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600&auto=format&fit=crop" alt="Psychology">
-          <div class="card-body">
-            <h3>Psychology & Growth</h3>
-            <p>Actionable wisdom, emotional resilience, mind habits, and profound self-reflection.</p>
-            <button>Browse Books</button>
+      <section id="gallery" class="section">
+        <h2 class="section-heading">Featured Book Covers</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=500" alt="Book 1">
+            <div class="overlay"><span>Great Expectations</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500" alt="Book 2">
+            <div class="overlay"><span>To Kill a Mockingbird</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&auto=format&fit=crop" alt="Book 3">
+            <div class="overlay"><span>The Great Gatsby</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=500" alt="Book 4">
+            <div class="overlay"><span>Atomic Habits</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=500" alt="Book 5">
+            <div class="overlay"><span>Sherlock Holmes</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=500" alt="Book 6">
+            <div class="overlay"><span>The Hobbit</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=500" alt="Book 7">
+            <div class="overlay"><span>1984 by George Orwell</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=500" alt="Book 8">
+            <div class="overlay"><span>The Little Prince</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1476275466078-4007374efbbe?w=500" alt="Book 9">
+            <div class="overlay"><span>The Alchemist</span></div>
           </div>
         </div>
+      </section>
 
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600&auto=format&fit=crop" alt="History">
-          <div class="card-body">
-            <h3>Historical Fiction</h3>
-            <p>Dramatic chronicles, forgotten legends, timeless empires, and authentic world heritage.</p>
-            <button>Browse Books</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TASK 3: Book Gallery 3x3 -->
-    <section id="gallery" class="section-block">
-      <h2 class="section-title">Task 3: Featured Book Gallery (Grid 3x3)</h2>
-      <div class="gallery-container">
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=500" alt="Book 1">
-          <div class="overlay"><span>Great Expectations</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500" alt="Book 2">
-          <div class="overlay"><span>To Kill a Mockingbird</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&auto=format&fit=crop" alt="Book 3">
-          <div class="overlay"><span>The Great Gatsby</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=500" alt="Book 4">
-          <div class="overlay"><span>Atomic Habits</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=500" alt="Book 5">
-          <div class="overlay"><span>Sherlock Holmes</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=500" alt="Book 6">
-          <div class="overlay"><span>The Hobbit</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=500" alt="Book 7">
-          <div class="overlay"><span>1984 by George Orwell</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=500" alt="Book 8">
-          <div class="overlay"><span>The Little Prince</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1476275466078-4007374efbbe?w=500" alt="Book 9">
-          <div class="overlay"><span>The Alchemist</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TASK 4: Combined Section -->
-    <section id="releases" class="section-block">
-      <h2 class="section-title">Task 4: Combined Showcase (Grid + Flexbox)</h2>
-      <div class="showcase-grid">
-        <div class="releases">
-          <div class="item-card">
-            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=300&auto=format&fit=crop" alt="Pass">
-            <div>
+      <section id="projects" class="section">
+        <h2 class="section-heading">Special Releases</h2>
+        <div class="project-list">
+          <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=300" alt="Pass">
+            <div class="project-info">
               <h3>Digital Reading Pass</h3>
-              <p>Instant synchronization across devices.</p>
+              <p>Instant synchronization and reading history across all your personal devices.</p>
+              <button>Learn More</button>
             </div>
           </div>
-          <div class="item-card">
-            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&auto=format&fit=crop" alt="Guild">
-            <div>
+
+          <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300" alt="Guild">
+            <div class="project-info">
               <h3>Reader's Guild</h3>
-              <p>Monthly discussions and exclusive reviews.</p>
+              <p>Monthly discussions, author Q&A sessions, and exclusive editor reviews.</p>
+              <button>Join Community</button>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="about-card">
-          <h2>About Us</h2>
-          <p>Building an inspiring digital reading sanctuary for book lovers.</p>
-          <div class="tags">
-            <span>#Classics</span>
-            <span>#SciFi</span>
-            <span>#Mindset</span>
-          </div>
+    </main>
+
+    <aside class="sidebar">
+      <div class="sidebar-box">
+        <h2>About Us</h2>
+        <p>Building an inspiring digital reading sanctuary for book lovers worldwide. Discover, track, and enjoy your favorite literature seamlessly.</p>
+        <div class="tags">
+          <span>#Classics</span>
+          <span>#SciFi</span>
+          <span>#Mindset</span>
+          <span>#Novels</span>
         </div>
       </div>
-    </section>
 
-    <!-- TASK 2: Layout Preview Link / Frame -->
-    <section id="layout" class="section-block">
-      <h2 class="section-title">Task 2: Page Grid Skeleton</h2>
-      <p class="layout-note">Full-page layout is isolated in its standalone view:</p>
-      <a class="layout-link-btn" href="task2-layout/" target="_blank">Open Task 2 Grid Layout ↗</a>
-    </section>
+      <div class="sidebar-box">
+        <h3>Reading Tip</h3>
+        <p>Reading just 20 minutes a day exposes you to 1.8 million words per year.</p>
+      </div>
+    </aside>
+
+    <footer class="footer">
+      <p>&copy; 2026 BookHaven. All rights reserved.</p>
+    </footer>
 
   </div>
 

@@ -4,45 +4,53 @@
   padding: 0;
   font-family: sans-serif;
 }
-
 body {
   background-color: #f1f2f6;
   color: #2f3542;
 }
-
-/* NAVBAR (Task 0) */
-.navbar {
+.site-layout {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr 280px; /* Сол жақта контент еркін, оң жақта сайдбар 280px */
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header  header"
+    "main    sidebar"
+    "footer  footer";
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 20px;
+}
+.header {
+  grid-area: header;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #6c5ce7;
-  padding: 15px 30px;
+  padding: 16px 24px;
   color: white;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 12px rgba(108, 92, 231, 0.2);
 }
 
 .logo {
   font-size: 20px;
   font-weight: bold;
 }
-
 .nav-links {
   display: flex;
   gap: 20px;
 }
-
 .nav-links a {
   color: white;
   text-decoration: none;
   font-weight: 500;
+  transition: opacity 0.2s;
 }
-
 .nav-links a:hover {
   opacity: 0.8;
 }
-
 .nav-btn {
   background-color: #ff7675;
   color: white;
@@ -50,91 +58,95 @@ body {
   padding: 8px 16px;
   border-radius: 6px;
   cursor: pointer;
+  font-weight: bold;
 }
-
-/* CONTAINER */
-.page-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 40px 20px;
+.main-content {
+  grid-area: main;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px;
 }
-
-.section-title {
-  margin-bottom: 20px;
+.section-heading {
   font-size: 22px;
+  color: #2f3542;
+  margin-bottom: 18px;
   border-left: 4px solid #6c5ce7;
   padding-left: 10px;
 }
 
-/* TASK 1: CARDS ROW */
-.cards-container {
-  display: flex;
-  gap: 20px;
-}
 
+.genre-cards {
+  display: flex;
+  gap: 15px;
+}
 .card {
   flex: 1;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background: #ffffff;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease; /* Критерий: Hover */
 }
-
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
 .card img {
   width: 100%;
-  height: 160px;
+  height: 140px;
   object-fit: cover;
 }
-
 .card-body {
-  padding: 15px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
-
+.card-body h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
 .card-body p {
   flex-grow: 1;
-  margin: 10px 0;
-  color: #555;
-  font-size: 14px;
+  color: #747d8c;
+  font-size: 13px;
+  line-height: 1.4;
+  margin-bottom: 14px;
 }
-
 .card-body button {
   background-color: #6c5ce7;
   color: white;
   border: none;
   padding: 8px;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
+  font-size: 13px;
 }
 
-/* TASK 3: GALLERY */
-.gallery-container {
+.gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 12px;
 }
-
 .gallery-item {
   position: relative;
-  height: 180px;
+  height: 160px;
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
 }
-
+.gallery-item:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
 .gallery-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-
 .overlay {
   position: absolute;
   top: 0;
@@ -152,74 +164,98 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-
 .gallery-item:hover .overlay {
   opacity: 1;
 }
 
-/* TASK 4: COMBINED SECTION */
-.showcase-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 20px;
-}
-
-.releases {
+.project-list {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-
-.item-card {
+.project-card {
   display: flex;
   gap: 15px;
-  background: white;
-  padding: 15px;
+  background: #ffffff;
+  padding: 16px;
   border-radius: 10px;
   align-items: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
-
-.item-card img {
-  width: 90px;
-  height: 70px;
+.project-card img {
+  width: 110px;
+  height: 85px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 8px;
+}
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.project-info h3 {
+  font-size: 16px;
+  color: #2f3542;
+}
+.project-info p {
+  font-size: 13px;
+  color: #747d8c;
+}
+.project-info button {
+  align-self: flex-start;
+  margin-top: 4px;
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
 }
 
-.about-card {
-  background: white;
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sidebar-box {
+  background: #ffffff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
-
+.sidebar-box h2, .sidebar-box h3 {
+  color: #2f3542;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.sidebar-box p {
+  font-size: 13px;
+  color: #57606f;
+  line-height: 1.5;
+}
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
   margin-top: 15px;
 }
-
 .tags span {
   background-color: #f1f2f6;
+  color: #57606f;
   padding: 5px 10px;
-  border-radius: 4px;
+  border-radius: 15px;
   font-size: 12px;
+  font-weight: 500;
 }
 
-/* TASK 2: LINK BUTTON */
-.layout-note {
-  margin-bottom: 15px;
-  color: #555;
-}
-
-.layout-link-btn {
-  display: inline-block;
-  background-color: #6c5ce7;
+.footer {
+  grid-area: footer;
+  background-color: #2f3542;
   color: white;
-  text-decoration: none;
-  padding: 12px 24px;
-  border-radius: 6px;
-  font-weight: bold;
+  text-align: center;
+  padding: 18px;
+  border-radius: 8px;
+  font-size: 14px;
 }
